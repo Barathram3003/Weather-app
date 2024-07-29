@@ -29,11 +29,11 @@ const WeatherDetails = ({icon,temp, city, country, lat, log, humidity, wind}) =>
     <div className='lg:mt-2 mt-1 lg:text-2xl text-xl uppercase text-center font-semibold text-gray-500'>{country}</div>
     <div className='flex justify-center items-center gap-2 lg:mt-2 mt-1 text-center'>
       <div className='flex flex-col justify-center items-center lg:p-3 p-2'>
-        <span>Latitude</span>
+        <span className='lg:text-xl text-base'>Latitude</span>
         <span className='lg:text-2xl text-xl font-bold text-gray-500 lg:pt-2 pt-1'>{lat}</span>
       </div>
       <div className='flex flex-col justify-center items-center lg:p-3 p-2'>
-        <span>Longitude</span>
+        <span className='lg:text-xl text-base'>Longitude</span>
         <span className='lg:text-2xl text-xl font-bold text-gray-500 lg:pt-2 pt-1'>{log}</span>
       </div>
     </div>
@@ -50,8 +50,8 @@ const WeatherDetails = ({icon,temp, city, country, lat, log, humidity, wind}) =>
       </div>
     </div>
 
-    <div className='border border-gray-400 lg:mt-3 mt-1 p-4 rounded roumded-2xl flex items-center justify-center'>
-      <p className='lg:text-xl text-base text-gray-400'>Designed By <a className='text-teal-300 lg:font-bold font-semibold' href='https://barathram3003.github.io/Portfolio/'>BarathRamana</a></p>
+    <div className='border border-orange-400 lg:mt-3 mt-1 p-4 rounded roumded-2xl flex items-center justify-center'>
+      <p className='lg:text-xl text-base text-gray-400'>Designed By <a className='text-orange-300 lg:font-bold font-semibold' href='https://barathram3003.github.io/Portfolio/'>BarathRamana</a></p>
     </div>
   </>)
 }
@@ -147,7 +147,7 @@ function App() {
   return (
     <>
       <div className='lg:w-[450px]   bg-white rounded-lg shadow-lg p-10'>
-        <div className='flex w-[100:%] items-center border border-orange-300 rounded-md overflow-hidden'>
+        <div className='flex w-[100:%] items-center border border-orange-400 rounded-md overflow-hidden'>
           <input type="text" placeholder='Search City' className='felx flex-1 h-7 p-3 outline-none  border-none '  onChange={handleCity} value={text} onKeyDown={handleKeyDown}/>
           <img src={searchIcon} alt="Search" className='w-12 p-2 cursor-pointer' onClick={() => search()}/>
           </div>
@@ -156,7 +156,7 @@ function App() {
           {loading && <div className='mt-2 text-gray-500 text-xl text-center flex items-center justify-center'>
             <svg version="1.1" id="L7" className='lg:w-60 p-10 mt-2 ' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-              <path fill="#1aeaed" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3
+              <path fill="#fbd38d" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3
               c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z">
               <animateTransform 
                   attributeName="transform" 
@@ -167,7 +167,7 @@ function App() {
                   to="360 50 50" 
                   repeatCount="indefinite" />
               </path>
-              <path fill="#1aeaed" d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7
+              <path fill="#fbd38d" d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7
               c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z">
               <animateTransform 
                   attributeName="transform" 
@@ -178,7 +178,7 @@ function App() {
                   to="-360 50 50" 
                   repeatCount="indefinite" />
               </path>
-              <path fill="#1aeaed" d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5
+              <path fill="#fbd38d" d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5
               L82,35.7z">
               <animateTransform 
                   attributeName="transform" 
