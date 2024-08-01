@@ -15,14 +15,14 @@ import windIcon from "./assets/wind.png"
 import snowIcon from "./assets/snow.png"
 import humidityIcon from "./assets/humidity.png"
 import wrong from "./assets/wrong.png"
-import Header from "./Header.jsx"
+
 
 
 const WeatherDetails = ({icon,temp, city, country, lat, log, humidity, wind}) => {
 
   
   return (<>
-    <Header />
+    
     <div className='flex items-center justify-center'>
       <img src={icon} alt="image" className='p-5 px-2  lg:mt-2 mt-1 lg:mb-2 mb-1 lg:w-60 w-40' />
     </div>
